@@ -309,7 +309,7 @@ GEM
       actionmailer (>= 3.2)
       letter_opener (~> 1.0)
       railties (>= 3.2)
-    libv8 (3.16.14.15)
+    libv8 (3.16.14.17-x86_64-darwin-16)
     liquid (4.0.0)
     listen (3.0.5)
       rb-fsevent (>= 0.9.3)
@@ -529,8 +529,8 @@ GEM
     systemu (2.6.4)
     term-ansicolor (1.3.2)
       tins (~> 1.0)
-    therubyracer (0.12.2)
-      libv8 (~> 3.16.14.0)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
       ref
     thor (0.19.4)
     thread_safe (0.3.6)
@@ -683,7 +683,7 @@ DEPENDENCIES
   spring (~> 1.7.2)
   spring-commands-rspec (~> 1.0.4)
   spring-watcher-listen (~> 2.0.0)
-  therubyracer (~> 0.12.2)
+  therubyracer (~> 0.12.3)
   tumblr_client!
   twilio-ruby (~> 3.11.5)
   twitter (~> 5.14.0)
@@ -701,7 +701,7 @@ DEPENDENCIES
   xmpp4r (~> 0.5.6)
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.3.5p303
 
 BUNDLED WITH
    1.14.6
