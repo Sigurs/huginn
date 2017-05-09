@@ -28,8 +28,8 @@ class Event < ActiveRecord::Base
     where("expires_at IS NOT NULL AND expires_at < ?", Time.now)
   }
 
-  case ActiveRecord::Base.connection
-  when ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter
+  case ActiveRecord::Base.connection.adapter_name
+  when /Amysql/i
     # Protect the Event table from InnoDB's AUTO_INCREMENT Counter
     # Initialization by always keeping the latest event.
     scope :to_expire, -> { expired.where.not(id: maximum(:id)) }
